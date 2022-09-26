@@ -1,0 +1,48 @@
+CLASS NI ORGANISH
+
+
+TODO: Jamoa uchun.
+ - Nom
+ - Logo
+ - Rang
+ - Xizmatlar
+
+TODO: Jamoa websayt uchun 
+  Tools
+ - Nextjs 
+ - js 
+ - tailwindcss 
+ - gsap 
+ - react-three-fiber 
+ - drei
+ - i18next
+
+ 
+ TODO: Header
+   - Navbar ( Logo, Time, Navbar, Menu, )
+   - Hero ( Noise Gradient, ( Extra Large text, Button <center> ) )
+  Sections
+   - About
+      - Text vs Three modal
+   - Works
+      - Hover link change cursor and link animation
+   - Services
+      - Tools
+   - Contact
+    Extra large inputs & button
+  Footer
+   - Logo - year - Social media - email
+
+
+
+  TODO: Website uchun
+ - Loading page - about page - portfolio page - services page contact page
+ - Dark & light mode
+ - Language
+ - Custom cursor - https://youtu.be/pndIZhWHaTY
+ - 5 country time
+ - menu
+ - Cookie
+ - Fonts
+ ( - horizontal scroll)
+- music
