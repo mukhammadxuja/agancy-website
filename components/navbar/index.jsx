@@ -9,7 +9,7 @@ const Navbar = () => {
   const day = moment().format('dddd');
 
   return (
-    <div className="z-50 top-0 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem]">
+    <div className="fixed z-50 top-0 md:top-10 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem]">
       <div className='flex items-center justify-between'>
         <div className="w-16 rotate-45">
           <Image src={Logo} objectFit="contain" alt="" />

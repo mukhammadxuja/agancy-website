@@ -4,7 +4,7 @@ import { Navbar, Footer } from '../';
 
 const Layout = ({ children }) => {
   return (
-    <div className='md:container md:mx-auto px-4'>
+    <div className=''>
       <Navbar />
       <main>{children}</main>
       <Footer />
