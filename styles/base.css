@@ -8,6 +8,7 @@
 
 .text {
   mix-blend-mode: difference;
+  pointer-events: none;
 }
 
 body::before {
