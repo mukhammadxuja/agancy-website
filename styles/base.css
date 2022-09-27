@@ -19,15 +19,15 @@ p.p2 {
   line-height: 3.700rem;
 }
 
-body::before {
+header::before {
   animation: grain 10s steps(10) infinite;
   background-image: url(https://transparenttextures.com/patterns/noisy.png);
   content: '';
-  height: 500%;
-  left: -50%;
-  opacity: 1;
   position: fixed;
   top: -200%;
+  left: -50%;
+  height: 500%;
+  opacity: 1;
   width: 300%;
   pointer-events: none;
   z-index: -10000;
