@@ -2,13 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #FEFFF9;
   font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue',
-    'Helvetica', 'Arial', sans-serif;
+  'Helvetica', 'Arial', sans-serif;
 }
 
 .text {
   mix-blend-mode: difference;
   pointer-events: none;
+}
+
+p.p2 {
+  line-height: 3.700rem;
 }
 
 body::before {
@@ -59,9 +67,8 @@ body::before {
   }
 }
 
-
 .animation_gradient_text {
-  background: linear-gradient(-45deg, #000, #000, #000, #fff,  #000, #000);
+  background: linear-gradient(-45deg, #000, #000, #000, #fff, #000, #000);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

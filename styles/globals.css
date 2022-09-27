@@ -3,11 +3,31 @@
 @tailwind utilities;
 @import './base.css';
 
+@layer base {
+  :root {
+    --color-text-main: #ff6f69;
+    --color-text-base: #252525;
+    --color-text-muted: #3d4c58;
+    --color-text-white: #ffffff;
+    --dark-main-bg: #162447;
+    --dark-secondary-bg: #1F4068;
+    --dark-text-color: #DFEFF9;
+    --dark-text-muted: #efefef;
+  }
+}
+
+
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
   }
   .animation-delay-4000 {
     animation-delay: 4s;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-3 px-6 xl:py-[1.3rem] xl:px-[2.7rem] mx-2 rounded-full text-white hover:text-[#00CB00] bg-[#001F00] hover:bg-[#DFFFE3] duration-200 text-lg lg:text-xl uppercase font-semibold
   }
 }

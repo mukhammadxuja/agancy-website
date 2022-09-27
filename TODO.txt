@@ -9,13 +9,13 @@ TODO: Jamoa uchun.
 
 TODO: Jamoa websayt uchun 
   Tools
- - Nextjs 
- - js 
- - tailwindcss 
- - gsap 
+ - Nextjs +
+ - js + 
+ - tailwindcss + 
+ - gsap +
  - react-three-fiber 
  - drei
- - i18next
+ - i18next +
 
  
  TODO: Header
@@ -46,3 +46,12 @@ TODO: Jamoa websayt uchun
  - Fonts
  ( - horizontal scroll)
 - music
+
+TODO: 28.09.22
+    Navbar z index
+    Language refactor
+    Noise effect fix
+    Portfolio section
+    Cursor animation
+    Locomotive scroll
+    Loading
