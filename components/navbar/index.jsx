@@ -7,6 +7,10 @@ const Navbar = () => {
   const time = moment().format('LT');
   const day = moment().format('dddd');
 
+  const log = () => {
+    console.log('working');
+  }
+
   return (
     <div>
       <div className="fixed z-50 top-0 md:top-10 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem]">
@@ -27,7 +31,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-5 right-5 flex items-center space-x-2">
+      <div className="fixed z-50 bottom-5 right-5 flex items-center space-x-2">
+        <div>
+          <p onClick={log} className='font-semibold cursor-pointer'>Dark Mode</p>
+          {/* <p className='font-semibold cursor-pointer'>Light Mode</p> */}
+        </div>
         <div className='cursor-pointer'>
           <svg
             xmlns="http://www.w3.org/2000/svg"

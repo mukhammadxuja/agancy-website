@@ -50,8 +50,10 @@ TODO: Jamoa websayt uchun
 TODO: 28.09.22
     Navbar z index +
     About section +
-    Language refactor
     Noise effect fix +
+    Console errors
+    Language refactor
+    Menu
     Portfolio section
     Cursor animation
     Locomotive scroll
