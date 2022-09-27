@@ -22,21 +22,31 @@ module.exports = {
             transform: 'scale(1)',
             transform: 'translateX(0px)',
             transform: 'translateY(0px)',
+            background: "#ff6f69 ", 
           },
-          '33%': {
+          '25%': {
             transform: 'scale(1.1)',
             transform: 'translateX(30px)',
             transform: 'translateY(30px)',
+            background: "#ffcc5c ",
           },
-          '66%': {
+          '50%': {
             transform: 'scale(0.9)',
             transform: 'translateX(50px)',
             transform: 'translateY(30px)',
+            background: "#88d8b0",
           },
-          '99%': {
+          '75%': {
+            transform: 'scale(1.1)',
+            transform: 'translateX(0px)',
+            transform: 'translateY(0px)',
+            background: "#8b9dc3 ",
+          },
+          '100%': {
             transform: 'scale(1)',
             transform: 'translateX(0px)',
             transform: 'translateY(0px)',
+            background: "#ff6f69 ",
           },
         },
       },

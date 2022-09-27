@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import moment from 'moment';
-
 import Logo from '../../public/assets/images/qalampir.png';
 
 const Navbar = () => {
