@@ -5,14 +5,10 @@
 
 @layer base {
   :root {
-    --color-text-main: #ff6f69;
-    --color-text-base: #252525;
-    --color-text-muted: #3d4c58;
-    --color-text-white: #ffffff;
-    --dark-main-bg: #162447;
-    --dark-secondary-bg: #1F4068;
-    --dark-text-color: #DFEFF9;
-    --dark-text-muted: #efefef;
+    --color-text-main: #001F00;
+    --color-text-muted: #565656;
+    --color-text-own: #00ff00;
+    --color-bg-dark: #162447;
   }
 }
 

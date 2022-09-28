@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const log = () => {
     console.log('working');
-  }
+  };
 
   return (
     <div>
@@ -19,24 +19,28 @@ const Navbar = () => {
             <Image src={Logo} objectFit="contain" alt="" />
           </div>
           <div className="hidden md:inline-flex items-center space-x-4">
-            <div className="text text-[#001F00] dark:text-white flex items-center text-xl uppercase space-x-1 md:space-x-2 font-semibold">
+            <div className="text text-main dark:text-white flex items-center text-xl uppercase space-x-1 md:space-x-2 font-semibold">
               <span className="text mix-blend-difference">{day}</span>
-              <span className="text" mix-blend-difference>{time}</span>
+              <span className="text" mix-blend-difference>
+                {time}
+              </span>
             </div>
           </div>
           <div className="cursor-pointer">
-            <span className="text text-[#001F00] dark:text-white text-xl uppercase space-x-1 font-semibold">
+            <span className="text text-main dark:text-white text-xl uppercase space-x-1 font-semibold">
               Menu
             </span>
           </div>
         </div>
       </div>
       <div className="fixed z-50 bottom-5 right-5 flex items-center space-x-2">
-        <div>
-          <p onClick={log} className='font-semibold cursor-pointer'>Dark Mode</p>
+        <div className="text-main dark:text-white">
+          <p onClick={log} className="font-semibold cursor-pointer">
+            Dark Mode
+          </p>
           {/* <p className='font-semibold cursor-pointer'>Light Mode</p> */}
         </div>
-        <div className='cursor-pointer'>
+        <div className="cursor-pointer text-main dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -52,7 +56,7 @@ const Navbar = () => {
             />
           </svg>
         </div>
-        <div className='cursor-pointer'>
+        <div className="cursor-pointer text-main dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

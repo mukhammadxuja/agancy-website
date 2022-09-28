@@ -15,17 +15,17 @@ const Header = () => {
       <div className="absolute z-10 text-center uppercase">
         <h1
           ref={h1}
-          className="text text-[#001F00] dark:text-white text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold"
+          className="text text-main dark:text-white text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold"
         >
           Richard sancho
         </h1>
         <h1
           ref={h1Second}
-          className="text text-[#001F00] dark:text-white text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold"
+          className="text text-main dark:text-white text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold"
         >
           Design director
         </h1>
-        <p className="animation_gradient_text text-[#001F00] dark:text-white text-lg lg:text-2xl font-bold my-2 lg:mt-8 2xl:mt-10">
+        <p className="animation_gradient_text text-main dark:text-white text-lg lg:text-2xl font-bold my-2 lg:mt-8 2xl:mt-10">
           Scroll to continue
         </p>
       </div>
