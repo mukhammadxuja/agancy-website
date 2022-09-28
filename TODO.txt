@@ -51,7 +51,7 @@ TODO: 28.09.22
     Navbar z index +
     About section +
     Noise effect fix +
-    Change all color to variable color
+    Change all color to variable color +
     Console errors
     Language refactor
     Menu
