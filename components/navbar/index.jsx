@@ -2,14 +2,40 @@ import React from 'react';
 import Image from 'next/image';
 import moment from 'moment';
 import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
 
 import Logo from '../../public/assets/images/qalampir.png';
 
 const Navbar = () => {
   const [languages, setLanguages] = React.useState(false);
   const time = moment().format('LT');
-  const day = moment().format('dddd'); 
-  const router = useRouter();
+  const day = moment().format('dddd');
+
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  const renderChangeTheme = () => {
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+    if (currentTheme === 'dark') {
+      return (
+        <p
+          onClick={() => setTheme('light')}
+          className="font-semibold cursor-pointer"
+        >
+          Light Mode
+        </p>
+      );
+    } else {
+      return (
+        <p
+          onClick={() => setTheme('dark')}
+          className="font-semibold cursor-pointer"
+        >
+          Dark Mode
+        </p>
+      );
+    }
+  };
 
   const openLang = () => {
     setLanguages(!languages);
@@ -40,12 +66,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="fixed z-50 bottom-5 right-5 flex items-center space-x-2">
-        <div className="text-main dark:text-white">
-          <p className="font-semibold cursor-pointer">
-            Dark Mode
-          </p>
-          {/* <p className='font-semibold cursor-pointer'>Light Mode</p> */}
-        </div>
+        <div className="text-main dark:text-white">{renderChangeTheme()}</div>
         <div className="relative text-main dark:text-white">
           <div onClick={openLang} className="cursor-pointer">
             <svg
@@ -63,15 +84,30 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <div className={languages ? 'absolute left-1/2 transform -translate-x-1/2 bottom-4 md:bottom-6 xl:bottom-8 p-2 rounded-sm border border-main bg-gray-200 backdrop-filter backdrop-blur-xl' : 'hidden'}>
+          <div
+            className={
+              languages
+                ? 'absolute left-1/2 transform -translate-x-1/2 bottom-4 md:bottom-6 xl:bottom-8 p-2 rounded-md border border-main bg-gray-200 backdrop-filter backdrop-blur-xl'
+                : 'hidden'
+            }
+          >
             <ul className="">
-              <li onClick={() => router.push("/en", "/en", { locale: "en" })} className="text-lg text-main hover:text-muted font-normal cursor-pointer active">
+              <li
+                onClick={() => router.push('/en', '/en', { locale: 'en' })}
+                className="text-lg text-main hover:text-muted font-normal cursor-pointer active"
+              >
                 En
               </li>
-              <li onClick={() => router.push("/ru", "/ru", { locale: "ru" })} className="text-lg text-main hover:text-muted font-normal cursor-pointer">
+              <li
+                onClick={() => router.push('/ru', '/ru', { locale: 'ru' })}
+                className="text-lg text-main hover:text-muted font-normal cursor-pointer"
+              >
                 Ru
               </li>
-              <li onClick={() => router.push("/uz", "/uz", { locale: "uz" })} className="text-lg text-main hover:text-muted font-normal cursor-pointer">
+              <li
+                onClick={() => router.push('/uz', '/uz', { locale: 'uz' })}
+                className="text-lg text-main hover:text-muted font-normal cursor-pointer"
+              >
                 Uz
               </li>
             </ul>

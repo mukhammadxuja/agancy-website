@@ -52,8 +52,9 @@ TODO: 28.09.22
     About section +
     Noise effect fix +
     Change all color to variable color +
+    Language refactor +
+    Dark mode refactor +
     Console errors
-    Language refactor
     Menu
     Portfolio section
     Cursor animation
