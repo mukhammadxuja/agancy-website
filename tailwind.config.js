@@ -21,6 +21,7 @@ module.exports = {
       },
       animation: {
         blob: 'blob 7s infinite',
+        marquee: 'marquee 5s linear infinite',
       },
       keyframes: {
         blob: {
@@ -54,6 +55,10 @@ module.exports = {
             transform: 'translateY(0px)',
             background: '#ff6f69 ',
           },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },

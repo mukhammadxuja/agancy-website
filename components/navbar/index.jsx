@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import moment from 'moment';
-import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 
 import Logo from '../../public/assets/images/qalampir.png';
+import { Button } from '../';
 
 const Navbar = () => {
   const [languages, setLanguages] = React.useState(false);
@@ -66,9 +66,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="cursor-pointer">
-            <span className="text text-main dark:text-white text-xl uppercase space-x-1 font-semibold">
-              Menu
-            </span>
+            <Button text="Menu" textColor="text-main dark:text-white font-semibold" border="border border-main dark:border-white" bg="bg-transparent dark:bg-transparent" darkHoverBg="dark:hover:bg-green-200" />
           </div>
         </div>
       </div>

@@ -31,9 +31,9 @@ const Header = () => {
       </div>
       <div className="min-h-screen flex items-center justify-center px-16">
         <div className="relative w-full max-w-lg">
-          <div className="absolute -top-10 -left-4 w-64 h-64 lg:w-96 lg:h-96 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
-          <div className="absolute -top-10 -right-4 w-64 h-64 lg:w-96 lg:h-96 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-10 -left-[100px] sm:-left-[80px] md:-left-[130px] w-64 h-64 lg:w-96 lg:h-96 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute bg-purple-500 -top-10 -left-4 w-64 h-64 lg:w-96 lg:h-96 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
+          <div className="absolute bg-green-500 -top-10 -right-4 w-64 h-64 lg:w-96 lg:h-96 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute bg-orange-500 -bottom-10 -left-[100px] sm:-left-[80px] md:-left-[130px] w-64 h-64 lg:w-96 lg:h-96 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
       </div>
     </header>

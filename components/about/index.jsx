@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Button } from '../'
+
 const About = () => {
   return (
     <div className="container mx-auto flex items-center py-10 lg:py-16 xl:py-[32]">
@@ -31,7 +33,8 @@ const About = () => {
             . We’re here to change this.
           </p>
         </div>
-        <button className="btn">join us</button>
+        <Button text="Join Us" textColor="text-white" bg="bg-main dark:bg-own" darkHoverBg="dark:hover:bg-green-200" />
+        {/* <button className="btn">join us</button> */}
       </div>
     </div>
   );
