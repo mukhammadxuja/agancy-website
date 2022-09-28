@@ -55,7 +55,7 @@ TODO: 28.09.22
     Language refactor +
     Dark mode refactor +
     Console errors
-    Menu
+    Menu 
     Portfolio section
     Cursor animation
     Locomotive scroll

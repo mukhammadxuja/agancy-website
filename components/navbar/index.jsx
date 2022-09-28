@@ -11,6 +11,13 @@ const Navbar = () => {
   const time = moment().format('LT');
   const day = moment().format('dddd');
 
+  const [mounted, setMounted] = React.useState(false);
+
+  // When mounted on client, now we can show the UI
+  React.useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
   const { systemTheme, theme, setTheme } = useTheme();
 
   const renderChangeTheme = () => {
@@ -52,7 +59,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:inline-flex items-center space-x-4">
             <div className="text text-main dark:text-white flex items-center text-xl uppercase space-x-1 md:space-x-2 font-semibold">
-              <span className="text mix-blend-difference">{day}</span>
+              <span className="text">{day}</span>
               <span className="text" mix-blend-difference>
                 {time}
               </span>

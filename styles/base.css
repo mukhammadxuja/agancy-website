@@ -5,14 +5,8 @@
 }
 
 body {
-  background-color: #FEFFF9;
   font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue',
   'Helvetica', 'Arial', sans-serif;
-}
-
-.text {
-  mix-blend-mode: difference;
-  pointer-events: none;
 }
 
 p.p2 {
