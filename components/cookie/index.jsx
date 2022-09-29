@@ -1,9 +1,25 @@
 import React from 'react';
-import { Button } from '..';
 
 const Cookie = () => {
+  const [cookie, setCookie] = React.useState(false);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setCookie(!cookie);
+    }, 10000);
+  }, []);
+
+  const closeCooke = () => {
+    setCookie(false);
+  };
+
   return (
-    <div className="fixed z-[100] bottom-5 md:bottom-10 left-1/2 transform -translate-x-1/2">
+    <div
+      className={
+        cookie
+          ? 'fixed z-[100] block bottom-5 md:bottom-10 left-1/2 transform -translate-x-1/2'
+          : 'hidden'
+      }
+    >
       <div className="flex items-center space-x-2 md:space-x-3 bg-white p-2 md:px-3 rounded-full">
         <div>
           <svg
@@ -87,7 +103,10 @@ const Cookie = () => {
             Learn more
           </a>
         </div>
-        <button className="bg-main hover:bg-white border-[1px] border-transparent hover:border-main text-[10px] md:text-[13px] text-white hover:text-main uppercase text-center px-4 py-1 rounded-full duration-150">
+        <button
+          onClick={closeCooke}
+          className="bg-main hover:bg-white border-[1px] border-transparent hover:border-main text-[10px] md:text-[13px] text-white hover:text-main uppercase text-center px-4 py-1 rounded-full duration-150"
+        >
           Ok
         </button>
       </div>

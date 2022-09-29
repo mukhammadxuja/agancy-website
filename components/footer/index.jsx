@@ -1,7 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Logo from '../../public/assets/images/qalampir.png';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
