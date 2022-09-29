@@ -2,14 +2,25 @@ import React from 'react';
 import Image from 'next/image';
 import moment from 'moment';
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/router';
 
 import Logo from '../../public/assets/images/qalampir.png';
 import { Button } from '../';
 
 const Navbar = () => {
   const [languages, setLanguages] = React.useState(false);
+  const [mute, setMute] = React.useState(false);
   const time = moment().format('LT');
   const day = moment().format('dddd');
+  const router = useRouter();
+
+  const openLang = () => {
+    setLanguages(!languages);
+  };
+
+  const muteOrUnmute = () => {
+    setMute(!mute);
+  };
 
   const [mounted, setMounted] = React.useState(false);
 
@@ -44,12 +55,6 @@ const Navbar = () => {
     }
   };
 
-  const openLang = () => {
-    setLanguages(!languages);
-  };
-
-  console.log(languages);
-
   return (
     <div>
       <div className="fixed z-50 top-0 md:top-10 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem]">
@@ -66,7 +71,13 @@ const Navbar = () => {
             </div>
           </div>
           <div className="cursor-pointer">
-            <Button text="Menu" textColor="text-main dark:text-white font-semibold" border="border border-main dark:border-white" bg="bg-transparent dark:bg-transparent" darkHoverBg="dark:hover:bg-green-200" />
+            <Button
+              text="Menu"
+              textColor="text-main dark:text-white font-semibold"
+              border="border border-main dark:border-white"
+              bg="bg-transparent dark:bg-transparent"
+              darkHoverBg="dark:hover:bg-green-200"
+            />
           </div>
         </div>
       </div>
@@ -118,21 +129,39 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="cursor-pointer text-main dark:text-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-            />
-          </svg>
+        <div onClick={muteOrUnmute} className="cursor-pointer text-main dark:text-white dark:hover:text-main">
+          <div className={mute ?  "hidden": "hover:bg-white p-2 md:p-3 rounded-full duration-150"}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+              />
+            </svg>
+          </div>
+          <div className={mute ? "hover:bg-white p-2 md:p-3 rounded-full duration-150" : "hidden"}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531V19.94a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.506-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>

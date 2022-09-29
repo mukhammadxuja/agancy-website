@@ -2,6 +2,8 @@
 export { default as Navbar } from './navbar/index';
 export { default as Footer } from './footer/index';
 
+export { default as Cookie } from './cookie/index';
+
 // UI kits
 export { default as Button } from './ui/Button';
 export { default as Marquee } from './ui/Marquee';
