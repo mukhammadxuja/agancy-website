@@ -41,9 +41,19 @@ const Footer = () => {
               <p>LINKEDIN</p>
             </a>
           </li>
+          <li className='cursor-pointer block md:hidden'>
+            <a target="_blank" href="google.com">
+              <p>EM</p>
+            </a>
+          </li>
+          <li className='cursor-pointer hidden md:block'>
+            <a target="_blank" href="google.com">
+              <p>EMAIL</p>
+            </a>
+          </li>
         </ul>
         <p className="ml-5 lg:ml-32 text-lg font-medium text-main dark:text-white">
-          M : hello@gmail.com
+          Brbalo
         </p>
       </div>
     </div>

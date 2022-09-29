@@ -54,7 +54,7 @@ TODO: 28.09.22
     Change all color to variable color +
     Language refactor +
     Dark mode refactor +
-    Console errors
+    Console errors 
     Menu 
     Portfolio section
     Cursor animation

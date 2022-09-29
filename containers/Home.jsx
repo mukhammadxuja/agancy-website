@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import { Header, About } from '../components';
+import { Header, About, Works } from '../components';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <section>
         <About />
+        <Works />
       </section>
     </div>
   );
