@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
-import { Header, About, Works, Cookie } from '../components';
+import { Header, About, Works, Cookie, Contact } from '../components';
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
         <About />
         <Works />
       </section>
+      <Contact />
     </div>
   );
 }
