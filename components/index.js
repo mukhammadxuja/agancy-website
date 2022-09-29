@@ -10,6 +10,7 @@ export { default as Marquee } from './ui/Marquee';
 
 // Components
 export { default as Header } from './header/index';
+export { default as Loading } from './loading/index';
 
 // Sections
 export { default as About } from './about/index';

@@ -13,7 +13,7 @@ p.p2 {
   line-height: 3.700rem;
 }
 
-header::before {
+body::before {
   animation: grain 10s steps(10) infinite;
   background-image: url(https://transparenttextures.com/patterns/noisy.png);
   content: '';
@@ -63,6 +63,16 @@ header::before {
 
 .animation_gradient_text {
   background: linear-gradient(-45deg, #000, #000, #000, #fff, #000, #000);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 8s ease-in-out infinite;
+  -moz-animation: animated_text 10s ease-in-out infinite;
+  -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+.animation_gradient_text_colorful {
+  background: linear-gradient(-45deg, #ff6f69, #ffcc5c, #88d8b0, #8b9dc3);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

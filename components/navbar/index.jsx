@@ -23,8 +23,7 @@ const Navbar = () => {
   };
 
   const [mounted, setMounted] = React.useState(false);
-
-  // When mounted on client, now we can show the UI
+  
   React.useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;

@@ -22,6 +22,7 @@ module.exports = {
       animation: {
         blob: 'blob 7s infinite',
         marquee: 'marquee 5s linear infinite',
+        rotate: 'rotate 10s linear infinite',
       },
       keyframes: {
         blob: {
@@ -59,6 +60,11 @@ module.exports = {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(180deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
     },
