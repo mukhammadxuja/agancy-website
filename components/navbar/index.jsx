@@ -62,7 +62,7 @@ const Navbar = () => {
           <div className="w-16 rotate-45">
             <Image src={Logo} objectFit="contain" alt="" />
           </div>
-          <div className="hidden md:inline-flex items-center space-x-4">
+          <div className="fixed left-1/2 transform -translate-x-1/2 hidden md:inline-flex items-center space-x-4">
             <div className="text text-main dark:text-white flex items-center text-xl uppercase space-x-1 md:space-x-2 font-semibold">
               <span className="text">{day}</span>
               <span className="text" mix-blend-difference>
