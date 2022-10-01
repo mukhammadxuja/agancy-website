@@ -3,6 +3,8 @@ import { ThemeProvider } from 'next-themes';
 import { appWithTranslation } from 'next-i18next';
 
 import Layout from '../components/layout';
+import SmoothScroll from '../utils/SmoothScroll';
+import CustomCursor from '../components/CustomCursor/index'
 import Loading from '../components/loading/index'
 import '../styles/globals.css';
 
