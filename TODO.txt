@@ -54,9 +54,27 @@ TODO: 28.09.22
     Change all color to variable color +
     Language refactor +
     Dark mode refactor +
-    Console errors 
+
+    Portfolio section +
+    Cursor animation +
+    Locomotive scroll +
+    Loading +
+
+TODO: 1.10.22
     Menu 
-    Portfolio section
-    Cursor animation
-    Locomotive scroll
-    Loading
+    Tools section
+    Clients Section
+    Services section ( udevs services section)
+    Team section
+    How we work
+    Back to top
+    Portfolio section Hover image animation
+
+TODO: 2.10.22
+   Navbar scroll none to top block
+   Transition each page
+   Transition Loading
+   Gsap animation each text
+
+TODO: 3.10.22
+   Language and copyrighting text

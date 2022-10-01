@@ -130,8 +130,8 @@ body::before {
 }
 
 .secondary-cursor {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
 }
 
 @keyframes fadeIn {
