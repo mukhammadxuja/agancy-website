@@ -45,7 +45,7 @@ TODO: Jamoa websayt uchun
  - Cookie
  - Fonts
  ( - horizontal scroll)
-- music
+- music  
 
 TODO: 28.09.22
     Navbar z index +

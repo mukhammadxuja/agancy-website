@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 1000);
   }, []);
   return (
     <ThemeProvider defaultTheme="system" enableSystem={true} attribute="class">

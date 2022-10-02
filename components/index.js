@@ -1,5 +1,8 @@
 // Layout
 export { default as Navbar } from './navbar/index';
+export { default as MultiLanguage } from './navbar/MultiLanguage';
+export { default as BgMusic } from './navbar/BgMusic';
+export { default as DarkAndLight } from './navbar/DarkAndLight';
 export { default as Footer } from './footer/index';
 
 export { default as Cookie } from './cookie/index';
