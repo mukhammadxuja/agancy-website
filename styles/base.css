@@ -17,6 +17,7 @@ body {
   cursor: none;
 }
 
+/* Grain image animation */
 body::before {
   animation: grain 10s steps(10) infinite;
   background-image: url(https://transparenttextures.com/patterns/noisy.png);
@@ -65,6 +66,7 @@ body::before {
   }
 }
 
+/* Gradient text animation */
 .animation_gradient_text {
   background: linear-gradient(-45deg, #000, #000, #000, #fff, #000, #000);
   background-size: 300%;
@@ -211,5 +213,39 @@ body::before {
 
   to {
     transform: translate(0px, -50%);
+  }
+}
+
+
+/* Marquee clients animation */
+.marquee-container {
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.marquee-container .marquee {
+  top: 0;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-container .marquee2 {
+  animation-delay: 15s;
+}
+.marquee-container b {
+  padding-left: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%
   }
 }

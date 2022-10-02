@@ -71,7 +71,7 @@ TODO: 1.10.22
     Portfolio section Hover image animation
 
 TODO: 2.10.22
-   Navbar scroll none to top block
+   Navbar scroll none to top block +
    Transition each page
    Transition Loading
    Gsap animation each text
