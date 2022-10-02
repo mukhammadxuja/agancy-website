@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="container mx-auto flex items-center py-10 lg:py-16 xl:py-32">
       <div className="mx-auto space-x-4">
-        <div className="flex items-center justify-center space-x-2">
+        <div className="flex items-center justify-center space-x-2 py-8">
           <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full border md:border-2 border-dashed border-main animate-spin">
             <span className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-own"></span>
           </div>
