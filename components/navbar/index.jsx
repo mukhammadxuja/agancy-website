@@ -6,12 +6,34 @@ import Logo from '../../public/assets/images/qalampir.png';
 import { Button, MultiLanguage, BgMusic, DarkAndLight } from '../';
 
 const Navbar = () => {
+  const [scroll, setScroll] = React.useState(false);
+  const navRef = React.useRef(null);
+  console.log(scroll);
+
   const time = moment().format('LT');
   const day = moment().format('dddd');
 
+  let lastScroll = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (lastScroll < window.scrollY) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+
+    lastScroll = window.scrollY;
+  });
+
   return (
     <React.Fragment>
-      <div className="fixed z-50 top-0 md:top-10 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem]">
+      <div
+        ref={navRef}
+        className={
+          scroll
+            ? 'fixed z-50 top-0 md:top-10 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem] transform -translate-y-36 duration-300'
+            : 'fixed z-50 top-0 md:top-10 left-[1rem] right-[1rem] sm:left-[2rem] sm:right-[2rem] lg:left-[4rem] lg:right-[4rem] xl:left-[5rem] xl:right-5[rem] 2xl:left-[6rem] 2xl:right-[6rem] transform translate-y-0 duration-300'
+        }
+      >
         <div className="flex items-center justify-between">
           <div className="w-16 rotate-45">
             <Image src={Logo} objectFit="contain" alt="" />
